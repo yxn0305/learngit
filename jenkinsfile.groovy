@@ -8,11 +8,11 @@ import groovy.transform.Field
 @Field def branch_name=''
 try {
 	node{
-	{
-		properties properties{
-			disableConcurrentBuilds()
-		}
-		}
+	// {
+	// 	properties properties{
+	// 		disableConcurrentBuilds()
+	// 	}
+	// 	}
 		{
 			stage('Git Clone'){
 				deleteDir()
