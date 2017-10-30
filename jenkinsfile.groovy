@@ -1,4 +1,7 @@
-Jenkinsfile (Declarative Pipeline)
+#!groovy
+import groovy.json.*
+import groovy.transform.Field
+// Jenkinsfile (Declarative Pipeline)
 pipline{
 	agent any
 	stages{
