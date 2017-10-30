@@ -1,7 +1,7 @@
 #!groovy
 import groovy.json.*
 import groovy.transform.Field
-Jenkinsfile (Scripted Pipeline)
+// Jenkinsfile (Scripted Pipeline)
 node {
     stage('Build') {
         echo 'Building....'
