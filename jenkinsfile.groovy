@@ -10,7 +10,7 @@ try {
 	node()
 	{
 		properties properties{
-			disableConcurrentBuilds(),
+			disableConcurrentBuilds()
 		}
 		}
 		{
