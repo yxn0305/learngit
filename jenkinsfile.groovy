@@ -34,8 +34,6 @@ try {
 			}
 		}	
 	}
-	
-}
 catch(Exception e) {
 	echo "an error"
 }
