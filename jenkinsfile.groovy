@@ -7,7 +7,7 @@ import groovy.transform.Field
 @Field def service=''
 @Field def branch_name=''
 try {
-	node()
+	node{
 	{
 		properties properties{
 			disableConcurrentBuilds()
@@ -34,6 +34,7 @@ try {
 			}
 		}	
 	}
+}
 catch(Exception e) {
 	echo "an error"
 }
