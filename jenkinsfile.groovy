@@ -5,7 +5,7 @@ import groovy.transform.Field
 @Field def image=''
 @Field def namespace=''
 @Field def service=''
-$Field def branch_name=''
+@Field def branch_name=''
 try {
 	node()
 	{
@@ -27,6 +27,7 @@ try {
 				echo "Building..."
 			}
 			stage('Test'){
+				pwd()
 				sh "/bin/bash test_pipe.sh"
 				cat first-item/file1
 			}
@@ -38,7 +39,7 @@ catch(Exception e) {
 	echo "an error"
 }
 finally {
-	
+	cleanWs()
 }
 
 // node {
