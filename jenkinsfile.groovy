@@ -9,9 +9,10 @@ import groovy.transform.Field
 try {
 	node()
 	{
-		properties properties[
+		properties properties{
 			disableConcurrentBuilds(),
-		]
+		}
+		}
 		{
 			stage('Git Clone'){
 				deleteDir()
@@ -29,7 +30,7 @@ try {
 			stage('Test'){
 				pwd()
 				sh "/bin/bash test_pipe.sh"
-				cat first-item/file1
+				cat file1
 			}
 		}	
 	}
