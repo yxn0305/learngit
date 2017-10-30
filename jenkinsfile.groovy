@@ -13,7 +13,8 @@ try {
 	// 		disableConcurrentBuilds()
 	// 	}
 	// 	}
-		{
+		stages{
+			{
 			stage('Git Clone'){
 				deleteDir()
 				branch_name="test-yxn"
@@ -33,6 +34,8 @@ try {
 				cat file1
 			}
 		}	
+		}
+		
 	}
 }
 catch(Exception e) {
