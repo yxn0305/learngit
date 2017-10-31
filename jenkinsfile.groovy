@@ -9,9 +9,8 @@ import groovy.transform.Field
 try {
 	Pipeline{
 		agent any
-		
+
 		stages{
-			{
 			stage('Git Clone'){
 				deleteDir()
 				branch_name="test-yxn"
@@ -29,8 +28,7 @@ try {
 				pwd()
 				sh "/bin/bash test_pipe.sh"
 				cat file1
-			}
-		}	
+			}	
 		}
 		
 	}
