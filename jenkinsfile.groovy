@@ -24,7 +24,7 @@ try {
 				echo "Building..."
 			}
 			stage('Test'){
-				pwd()
+				echo pwd()
 				sh "/bin/bash test_pipe.sh"
 				cat file1
 			}	
