@@ -7,10 +7,7 @@ import groovy.transform.Field
 @Field def service=''
 @Field def branch_name=''
 try {
-	Pipeline{
-		agent any
-
-		stages{
+	node{
 			stage('Git Clone'){
 				deleteDir()
 				branch_name="test-yxn"
@@ -29,8 +26,6 @@ try {
 				sh "/bin/bash test_pipe.sh"
 				cat file1
 			}	
-		}
-		
 	}
 }
 catch(Exception e) {
