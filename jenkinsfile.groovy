@@ -13,7 +13,7 @@ try {
 				branch_name="test-yxn"
 				Dir('learngit')
 				{
-					git credentialsId: '8e36221c-addd-49e7-b89f-c97183028275', url: 'https://github.com/yxn0305/learngit'
+					git credentialsId: '8e36221c-addd-49e7-b89f-c97183028275', url: 'https://github.com/yxn0305/learngit.git'
 					
 					
 				}
