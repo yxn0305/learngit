@@ -9,15 +9,16 @@ import groovy.transform.Field
 try {
 	node{
 			stage('Git Clone'){
-				deleteDir()
-				branch_name="test-yxn"
-				pwd()
-				Dir('learngit')
-				{
-					git credentialsId: '8e36221c-addd-49e7-b89f-c97183028275', url: 'https://github.com/yxn0305/learngit.git'
+				echo "git clone"
+				// deleteDir()
+				// branch_name="test-yxn"
+				// pwd()
+				// Dir('learngit')
+				// {
+				// 	git credentialsId: '8e36221c-addd-49e7-b89f-c97183028275', url: 'https://github.com/yxn0305/learngit.git'
 					
 					
-				}
+				// }
 			}
 			stage('Build image'){
 				echo "Building..."
