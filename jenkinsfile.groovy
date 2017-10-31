@@ -7,12 +7,9 @@ import groovy.transform.Field
 @Field def service=''
 @Field def branch_name=''
 try {
-	node{
-	// {
-	// 	properties properties{
-	// 		disableConcurrentBuilds()
-	// 	}
-	// 	}
+	Pipeline{
+		agent any
+		
 		stages{
 			{
 			stage('Git Clone'){
